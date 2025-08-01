@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <!-- Input for service name (e.g., Oil Change) -->
+    <EditText
+        android:id="@+id/serviceTypeInput"
+        android:hint="Service Type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Date of service -->
+    <EditText
+        android:id="@+id/dateInput"
+        android:hint="Service Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Notes input -->
+    <EditText
+        android:id="@+id/notesInput"
+        android:hint="Notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Save button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:text="Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Show Records -->
+    <Button
+        android:id="@+id/loadButton"
+        android:text="Show Records"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#FFFFFF"/>
+
+    <!-- Display result -->
+    <TextView
+        android:id="@+id/displayText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:textColor="#000000"/>
+</LinearLayout>
