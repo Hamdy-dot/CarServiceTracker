@@ -34,7 +34,7 @@
         android:text="Save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#000000"
+        android:background="@drawable/animated_gradient"
         android:textColor="#FFFFFF"/>
 
     <!-- Show Records -->

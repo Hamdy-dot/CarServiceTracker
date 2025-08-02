@@ -1,5 +1,6 @@
 package com.example.carservicetracker
 
+import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
@@ -24,6 +25,11 @@ class MainActivity : AppCompatActivity() {
         saveButton = findViewById(R.id.saveButton)
         loadButton = findViewById(R.id.loadButton)
         displayText = findViewById(R.id.displayText)
+        // buttons animation declarations:
+        val button = findViewById<Button>(R.id.saveButton)
+        val anim = button.background as AnimationDrawable
+        button.post { anim.start() }  // Starts the animation after layout is drawn
+
 
         // Save record to internal storage
         saveButton.setOnClickListener {
